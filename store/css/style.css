@@ -1,0 +1,21 @@
+body {
+  overflow: hidden;
+  background: linear-gradient(190deg, #23A6D5, rgb(128, 82, 255));
+}
+
+.centerText{
+   height: 100%;
+   position: absolute;
+    top: 35%;
+    left: 28%;
+     font-family: 'Comfortaa', cursive;
+    color: #fff;
+    font-size: 50pt;
+
+    /* vendor prefixes omitted due to brevity */
+  z-index:9999;
+  overflow:hidden;
+
+}
+
+
