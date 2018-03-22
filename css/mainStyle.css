@@ -395,9 +395,9 @@ opacity: 0.0 !important;
 
 background: linear-gradient(-45deg, rgb(161, 97, 190), rgb(128, 82, 255), #23A6D5, rgb(128, 82, 255));
 background-size: 400% 400%;
--webkit-animation: Gradient 50s ease-out;
--moz-animation: Gradient 50s ease-out;
-animation: Gradient 50s ease-out;
+-webkit-animation: Gradient 25s ease-in-out;
+-moz-animation: Gradient 25s ease-in-out;
+animation: Gradient 25s ease-in-out;
 
 transition: all 2.0s ease;
 }
@@ -406,9 +406,9 @@ transition: all 2.0s ease;
 
 background: linear-gradient(-45deg, rgb(161, 97, 190), rgb(128, 82, 255), #23A6D5, rgb(128, 82, 255));
 background-size: 400% 400%;
--webkit-animation: Gradient 50s ease-out;
--moz-animation: Gradient 50s ease-out;
-animation: Gradient 50s ease-out;
+-webkit-animation: Gradient 25s ease-in-out;
+-moz-animation: Gradient 25s ease-in-out;
+animation: Gradient 25s ease-in-out;
 
 transition: all 2.0s ease;
 }
