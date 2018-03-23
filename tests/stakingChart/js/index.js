@@ -1,8 +1,3 @@
-//global scope variables
-coraStakeReward = 0;
-
-
-
 
 $(function(){
   $("#coralliumChart").drawDoughnutChart([
