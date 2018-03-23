@@ -1,16 +1,24 @@
 //global scope variables
-stakeReward = 0;
+coraStakeReward = 0;
+
 
 
 
 $(function(){
-  $("#doughnutChart").drawDoughnutChart([
+  $("#coralliumChart").drawDoughnutChart([
     { title: "Stake Reward",         value : 97.5,  color: "#8080ff" },
     { title: "Dev Fund", value:  1,   color: "#85e085" },
     { title: "Marketing Fund",      value:  1,   color: "#99cc00" },
     { title: "Inhouse Reef",        value : 0.5,   color: "#F7E248" }
   ]);
+
+  $("#pivxChart").drawDoughnutChart([
+    { title: "Dynamic Stake Reward",         value : 45,  color: "#8080ff" },
+    { title: "Dynamic Masternodes Reward", value:  45,   color: "#85e085" },
+    { title: "Growth Fund",      value:  10,   color: "#99cc00" }
+  ]);
 });
+
 
 ;(function($, undefined) {
   $.fn.drawDoughnutChart = function(data, options) {
@@ -127,6 +135,7 @@ $(function(){
     }
 
     //Animation start
+
     animationLoop(drawPieSegments);
 
     //Functions
@@ -209,11 +218,14 @@ $(function(){
       }
     }
     function drawDoughnutText(animationDecimal, segmentTotal) {
+   
       $summaryNumber
         .css({opacity: animationDecimal})
        // .text((segmentTotal * animationDecimal).toFixed(1));
        //.text((segmentTotal * animationDecimal).toFixed(1) + "%");
-       .text((stakeReward * animationDecimal).toFixed(1) + "%");
+       
+       //Takes the data from the first part of the chart data for each data sets
+       .text((data[0].value * animationDecimal).toFixed(1) + "%");
     
     }
     function animateFrame(cnt, drawData) {
