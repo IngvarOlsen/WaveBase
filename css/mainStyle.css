@@ -43,8 +43,9 @@
 .timeline ul li div {
   position: relative;
   bottom: 0;
-  width: 400px;
+  width: 300px !important;
   padding: 15px;
+  word-wrap: break-word !important;
   background: rgb(128, 82, 255);
 }
 
@@ -73,7 +74,7 @@
 
 /*Distance for left content main box*/
 .timeline ul li:nth-child(even) div {
-  left: -439px;
+  left: -340px;
 }
 
 /*Box for left triangle box*/
@@ -185,14 +186,10 @@ header,
 
 
 .logoBanner{
+
   
-  position: absolute;
-   top: 50%;
-   left: 50%;
-   width: 500px;
-   height: 500px;
-   margin-top: -150px; /* Half the height */
-   margin-left: -400px; /* Half the width */
+   margin:0 auto;
+   margin-top: 270px; 
   z-index:9999;
 }
 
